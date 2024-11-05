@@ -5,9 +5,9 @@ public class practice04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		practice1();
-//		practice2();
+		practice2();
 //		practice3();
-		practice4();
+//		practice4();
 
 	}
 	
@@ -29,11 +29,11 @@ public class practice04 {
 	
 	private static void practice2() { // 문제 :double 형 배열 을 작성하고 1.2, 3.3, 6.7 값을 순서대로 입력하고 아래와 같이 출력되도록 for문을 작성하세요.
 		
-		double [] doubleArry = {1.2, 3.3, 6.7};
+		double [] d = {1.2, 3.3, 6.7};
 		
 		
-		for(int i = 0; i < doubleArry.length; i++) {
-			System.out.print(doubleArry[i]);
+		for(int i = d.length -1; i >= 0; i = i -2) {
+			System.out.print(d[i]);
 		}
 		
 	}
