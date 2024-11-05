@@ -6,7 +6,8 @@ public class Ex06 {
 
 	public static void main(String[] args) {
 //		groupEx();
-		priceEx();
+//		priceEx();
+//		bmiEx();
 
 	}
 	
@@ -54,5 +55,10 @@ public class Ex06 {
 		
 		scanner.close();
 	}
+	
+//	private static void bmiEx() {
+//		
+//	}
+//	
 	
 }
