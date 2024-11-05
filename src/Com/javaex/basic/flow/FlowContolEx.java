@@ -3,8 +3,8 @@ package Com.javaex.basic.flow;
 public class FlowContolEx {
 
 	public static void main(String[] args) {
-//		continueEx();
-		breakEx();
+		continueEx();
+//		breakEx();
 
 	}
 
