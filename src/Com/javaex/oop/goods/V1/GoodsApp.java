@@ -1,4 +1,4 @@
-package Com.javaex.oop.good;
+package Com.javaex.oop.goods.V1;
 
 //Goods v1. 필드
 class Goods {
