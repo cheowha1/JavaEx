@@ -83,7 +83,18 @@ class ColorPoint extends Point{
 	
 	// draw 메서드를 상속받았으나 약간 부족하니 새로 선언한다.
 	public void draw() {
-		System.out.printf("색상점[x=%d, y=%d, color=%s]를 그렸습니다.&n",x, y, color);
+		System.out.printf("색상점[x=%d, y=%d, color=%s]를 그렸습니다.%n",x, y, color);
+	}
+	
+	@Override
+	public void draw(boolean bShow) {
+		String message = String.format("색상점[x=%d, y=%d, color=%s]을", x, y, color);
+		message += bShow ? "그렸습니다." : " 지웠습니다.";
+		System.out.println(message);
+		
+		// 오버라이드 했지만 부모의 기능을 사용해야 할 때
+		super.draw(bShow);
+		
 	}
 }
 
