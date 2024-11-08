@@ -42,7 +42,7 @@ class Point{
 	
 	public void draw(boolean bshow) {
 		String message = String.format("점[x=%d, y=%d]을" , x ,y);
-//		message += bshow ? "그렸습니다.":"지웠습니다.";
+//		message += bShow ? "그렸습니다.":"지웠습니다.";
 		if (bshow)
 			message +="그렸습니다.";                // 위에 코드가 아래코드랑 똑같은거다
 		else
