@@ -9,8 +9,8 @@ public class staticEx {
     // 클래스 변수를 초기화 하는 static 블록
     static {
     	refcount = 0;  // 현재 인스턴스의 수
-    	classVar = "Static Member";
-    	System.out.println("Static Block calls");
+    	classVar = "static Member";
+    	System.out.println("static Block calls");
 //    	instanceVar = "InstanceVar";
     	// static 영역에서는 static 만 접근할 수 있다
     }
@@ -20,5 +20,13 @@ public class staticEx {
     	++refcount;
     	System.out.println("생성자 호출");
     	System.out.println("창조카운트:" + refcount );
+    }
+    
+    // 소멸자
+    @Override
+    protected void finalize() throws Throwable {
+    	--refcount;
+    	super.finalize();
+    	System.out.println("소멸자 호출");
     }
 }
